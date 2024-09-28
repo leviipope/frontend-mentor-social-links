@@ -1,0 +1,85 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter";
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+.mainbox{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 680px;
+    width: 410px;
+    background-color: hsl(0, 0%, 12%);   
+    border-radius: 10px;
+    padding: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar{
+    height: 7em;
+    width: 7em;
+    border-radius: 100%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.name{
+    font-weight: 600;
+    font-size: 26px;
+    margin-block-end: 0.5em;
+}
+.location{
+    margin-block-start: 0;
+    color: hsl(75, 94%, 57%);
+    font-weight: 700;
+}
+.sentence{
+    margin-block-end: 2em;
+    font-weight: 400;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5em;
+}
+.box{
+    width: 290px;
+    text-align: center;
+    padding: 15px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 7px;
+    font-weight: 600;
+}
+a.box{ 
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+a.box:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+@media (max-width: 375px){
+    .mainbox{
+        width: 335px;
+        height: 645px;
+        margin-top: 6em;
+    }
+    .box{
+        width: 260px;
+    }
+    .container{
+        row-gap: 1.2em;
+    }
+    .location{
+        margin-block-end: 1em;
+    }
+}
